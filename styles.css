@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #161616;
+    color: #ffffff;
+    font-family: 'Maven Pro', Arial, sans-serif;
+    font-size: 20px;
+}
+
+a {
+    color: #ffffff;
+}
+
+section {
+    margin: 12px 15%;
+    padding: 12px;
+}
+
+video {
+    width: 92%;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+section h3 {
+    font-size: 1.2em;
+}
+
+.head-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    padding: 12px 0;
+    background: #282828;
+    border-bottom: #9cbae7 solid 1px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 12px;
+}
+
+nav li:nth-child(odd) a:hover {
+    color: #6b98db;
+}
+
+nav li:nth-child(even) a:hover {
+    color: #81c96c;
+}
+
+/* Section A */
+
+.section-a {
+    text-align: center;
+    font-size: 1.1em;
+    background: #6b98db;
+    border-radius: 8px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.section-a p {
+    margin: 8px 15%;
+}
+
+/* Section B */
+
+.section-b {
+    background: #81c96c;
+    text-align: center;
+    border-radius: 8px;
+    border: #ffffff solid 2px;
+}
+
+.section-b p {
+    margin: 8px 0;
+}
+
+/* Section C */
+
+.section-c {
+    background: #6b98db;
+    border-radius: 8px;
+    border: #ffffff solid 2px;
+}
+
+.section-c ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-c ul li {
+    padding: 6px;
+    margin: 6px;
+}
+
+/* Section D */
+
+.section-d {
+    background: #0B572D;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.section-d > div {
+    margin: 0 15%;
+    padding: 12px;
+}
+
+.section-d div h3 {
+    display: inline-block;
+}
+
+.section-d a:hover {
+    font-weight: bold;
+    color: #0DCB64;
+}
+
+/* Maybe make link animated */
+.section-d div h3 span {
+    color: #0DCB64;
+}
+
+.section-d div ul:first-of-type li {
+    list-style: circle inside;
+    margin: 2px;
+}
+
+.section-d div ul:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6px;
+    font-size: 0.8em;
+}
+
+.section-d div ul:last-of-type li {
+    margin-right: 24px;
+}
+
+/* Section E */
+
+.section-e div {
+    background: #282828;
+    border: #6b98db solid 2px;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 6px;
+}
+
+.section-e div:nth-child(odd) {
+    border: #81c96c solid 2px;
+}
+
+.section-e div ul:first-of-type li {
+    list-style: circle inside;
+    margin: 2px;
+}
+
+.section-e div ul:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6px;
+    font-size: 0.8em;
+}
+
+.section-e div ul:last-of-type li {
+    margin-right: 18px;
+}
+
+/* Section F */
+
+.section-f > div {
+    background: #ececec;
+    color: #282828;
+    border: #6b98db solid 4px;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 6px;
+}
+
+.section-f > div:nth-child(odd) {
+    border: #81c96c solid 4px;
+}
+
+.section-f > div ul li {
+    list-style: circle inside;
+    margin: 2px;
+}
+
+.section-f > div h3 {
+    display: inline-block;
+}
+
+/* Section G */
+
+.section-g {
+    background: #ececec;
+    color: #282828;
+    margin: 0;
+    text-align: center;
+}
+
+.section-g a {
+    color: #282828;
+}
+
+/* Section H */
+
+.section-h {
+    background: #ececec;
+    color: #282828;
+    margin: 0;
+}
+
+.section-h section {
+    margin: 0px 15%;
+    text-align: center;
+}
+
+.section-h h3 {
+    font-size: 1.3em;
+}
+
+#animations div {
+    margin: 8px;
+    border-radius: 8px;
+    color: #1f6acc;
+    border: #1f6acc 2px solid;
+    padding: 8px 0;
+    background: #9cbae7;
+}
+
+#animations div:nth-child(even) {
+    color: #1da123;
+    border: #1da123 2px solid;
+    background: #81c96c;
+}
+
+#animations div p {
+    font-size: 1.2em;
+    margin: 4px;
+}
+
+#models {
+    background: #282828;
+    padding: 8px;
+    border: #9cbae7 3px solid;
+    border-radius: 8px;
+    color: #9cbae7;
+}
+
+#models div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#models div ul {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 100%;
+    text-align: left;
+}
+
+#models div ul li {
+    margin: 8px;
+    padding: 8px;
+    border-bottom: #9cbae7 1px solid;
+    cursor: pointer;
+}
+
+#models div img {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 8px;
+    margin: auto;
+    border-radius: 14px;
+    max-height: 220px;
+    width: auto;
+    border: #9cbae7 2px solid;
+}
+
+footer {
+    padding: 12px;
+    text-align: center;
+    border-top: #81c96c 1px solid;
+    background: #282828;
+}
+
+#languages > p {
+    font-size: 0.8em;
+}
+
+#languages div {
+    text-align: left;
+}
+
+#languages div li {
+    list-style: circle inside;
+    margin: 2px;
+    font-size: 0.9em;
+}
+
+#languages div:nth-child(odd) p {
+    color: #81c96c;
+}
+
+#languages div:nth-child(even) p {
+    color: #9cbae7;
+}
+
+/* Required for now because not fully responsive */
+
+#warning {
+    display: none;
+}
