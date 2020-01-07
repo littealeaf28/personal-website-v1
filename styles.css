@@ -318,7 +318,7 @@ footer {
 #languages div li {
     list-style: circle inside;
     margin: 2px;
-    font-size: 0.9em;
+    font-size: 0.85em;
 }
 
 #languages div:nth-child(odd) p {
@@ -333,4 +333,34 @@ footer {
 
 #warning {
     display: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: none;
+    }
+
+    section {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    #warning {
+        display: initial;
+        text-align: center;
+    }
+
+    #warning h1 {
+        margin: 4px;
+        color: #9cbae7;
+    }
+
+    #warning p {
+        padding: 0 5%;
+    }
 }
