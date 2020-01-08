@@ -57,7 +57,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-left: 12px;
+    margin-left: 16px;
 }
 
 nav li:nth-child(odd) a:hover {
