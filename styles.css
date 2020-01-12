@@ -45,14 +45,23 @@ section h3 {
 }
 
 nav {
-    padding: 12px 0;
     background: #282828;
     border-bottom: #9cbae7 solid 1px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+nav img {
+    margin: 12px;
+    height: 40px;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
+    align-self: center;
+    margin: 12px;
 }
 
 nav li {
@@ -66,6 +75,10 @@ nav li:nth-child(odd) a:hover {
 
 nav li:nth-child(even) a:hover {
     color: #81c96c;
+}
+
+#icon {
+    display: none;
 }
 
 /* Section A */
@@ -160,7 +173,7 @@ nav li:nth-child(even) a:hover {
 
 /* Section E */
 
-.section-e div {
+.section-e > div {
     background: #282828;
     border: #6b98db solid 2px;
     border-radius: 6px;
@@ -168,24 +181,42 @@ nav li:nth-child(even) a:hover {
     margin: 6px;
 }
 
-.section-e div:nth-child(odd) {
+.section-e > div:nth-child(odd) {
     border: #81c96c solid 2px;
 }
 
-.section-e div ul:first-of-type li {
+.section-e > div ul:first-of-type li {
     list-style: circle inside;
     margin: 2px;
 }
 
-.section-e div ul:last-of-type {
+.section-e > div ul:last-of-type {
     display: flex;
     flex-wrap: wrap;
     margin-top: 6px;
     font-size: 0.8em;
 }
 
-.section-e div ul:last-of-type li {
+.section-e > div ul:last-of-type li {
     margin-right: 18px;
+}
+
+.section-e div div {
+    display: flex;
+    align-items: center;
+}
+
+.section-e div div h3 {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.section-e div div img {
+    height: 50px;
+}
+
+.section-e div div img:hover {
+    cursor: pointer;
 }
 
 /* Section F */
@@ -337,7 +368,91 @@ footer {
 
 /* Media Queries */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 920px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #icon {
+        display: initial;
+        margin: auto 14px auto auto;
+    }
+
+    #icon:hover {
+        cursor: pointer;
+    }
+
+    #icon:hover .menublocks {
+        background: #9cbae7;
+    }
+
+    .menublocks {
+        background: #ececec;
+        height: 5px;
+        width: 27px;
+        margin: 4px 0;
+        border-radius: 2.5px;
+    }
+
+    #links {
+        margin: 0;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: none;
+    }
+
+    #links li {
+        display: block;
+        margin: 8px;
+        padding: 8px;
+        border-top: 1px #ececec solid;
+    }
+
+    #links li:nth-child(odd):hover {
+        border-top: 1px #9cbae7 solid;
+    }
+
+    #links li:nth-child(even):hover {
+        border-top: 1px #81c96c solid;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    section {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .section-d > div {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #side section {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #models div {
+        display: initial;
+    }
+    
+    #models div ul {
+        width: 90%;
+        margin: auto;
+    }
+    
+    #models div img {
+        margin: 6px auto 0 auto;
+        width: 70%;
+        max-height: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
     nav {
         display: none;
     }

@@ -50,3 +50,27 @@ carrot.addEventListener('click', function() {
     changeLabel(carrot);
     modelImg.src = 'images/Carrot Keychain.jpg';
 });
+
+const links = document.getElementById('links');
+
+function menuClick() {
+    if (links.style.display === "block") {
+        links.style.display = "none";
+    }
+    else {
+        links.style.display = "block";
+    }
+}
+
+const mediaQuery = window.matchMedia('(min-width: 920px)');
+
+function showLinks(mediaQuery) {
+    if (mediaQuery.matches) {
+        links.style.display = "block";
+    }
+    else {
+        links.style.display = "none";
+    }
+}
+
+mediaQuery.addEventListener('change', showLinks);
