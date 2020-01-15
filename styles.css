@@ -146,9 +146,25 @@ nav li:nth-child(even) a:hover {
 }
 
 .section-d a:hover {
-    font-weight: bold;
     color: #0DCB64;
 }
+
+.section-d > div div:last-child  {
+    color: #0DCB64;
+    text-align: center;
+    padding: 8px 4%;
+    width: 92%;
+    margin: auto;
+    margin-top: 20px;
+    background: rgb(30,30,30);
+    border-radius: 12px;
+    border: #0DCB64 solid 1px;
+}
+
+.section-d video  {
+    width: 100%;
+}
+
 
 /* Maybe make link animated */
 .section-d div h3 span {
