@@ -112,20 +112,34 @@ nav li:nth-child(even) a:hover {
 /* Section C */
 
 .section-c {
-    background: #6b98db;
+    color: #6b98db;
+    background: #ececec;
     border-radius: 8px;
-    border: #ffffff solid 2px;
+    border: #6b98db solid 2px;
+}
+
+.section-c h3 {
+    text-align: center;
 }
 
 .section-c ul {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .section-c ul li {
     padding: 6px;
     margin: 6px;
+}
+
+.section-c ul:nth-of-type(1) img {
+    height: 80px;
+}
+
+.section-c ul:nth-of-type(2) img {
+    height: 56px;
 }
 
 /* Section D */
@@ -233,6 +247,21 @@ nav li:nth-child(even) a:hover {
 
 .section-e div div img:hover {
     cursor: pointer;
+}
+
+#fourelements-display {
+    margin-top: 8px;
+    display: flex;
+}
+
+#fourelements-display img{
+    margin: 8px;
+    cursor: initial;
+    width: 40%;
+    height: auto;
+    max-height: 500px;
+    width: auto;
+    margin-bottom: 0;
 }
 
 /* Section F */
@@ -434,6 +463,23 @@ footer {
     }
 }
 
+@media screen and (max-width: 840px) {
+    #fourelements-display {
+        display: initial;
+    }
+
+    #fourelements-display img {
+        width: 70%;
+        margin: auto;
+        max-height: 480px;
+        width: auto;
+        height: auto;
+        margin-top: 8px;
+        margin-left: 8px;
+        box-sizing: border-box;
+    }
+}
+
 @media screen and (max-width: 720px) {
     section {
         margin-left: 2%;
@@ -468,7 +514,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
     nav {
         display: none;
     }
@@ -494,4 +540,4 @@ footer {
     #warning p {
         padding: 0 5%;
     }
-}
+} */
