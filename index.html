@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Maven+Pro">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Tianrui</title>
 </head>
 <body>
@@ -30,11 +31,11 @@
         <h1>Hello World, I'm Tianrui!</h1>
         <p><em>I'm a computer science engineer, currently attending the University of Florida, with a love for learning new technologies and designing and developing fun, exciting applications!</em></p>
     </section>
-    <section id="about" class="section-b">
+    <section id="about" class="section-b" data-aos="fade-left">
         <h1>A Little About Me</h1>
         <p>Hello again, Tianrui here. Born and raised in Nevada, I am now a college student at the University of Florida, majoring in computer science engineering and minoring in electrical engineering and physics. Currently, while I have and still have the thrill of building websites and games, I hope to continue to use my years in college to explore my interests in computer science and the like through unique, fulfilling projects, experiences, and opportunties.</p>
     </section>
-    <section class="section-c">
+    <section class="section-c" data-aos="fade-right">
         <h1>Skills</h1>
         <h3>Programming Languages</h3>
         <ul>
@@ -58,7 +59,7 @@
             <li><img src="images/onshape.png"></li>
         </ul>
     </section>
-    <section id="experience" class="section-d">
+    <section id="experience" class="section-d" data-aos="fade-in">
         <h1>Experience</h1>
         <div>
             <div class="head-container">
@@ -87,7 +88,7 @@
     </section>
     <section id="projects" class="section-e">
         <h1>Some Things I've Built</h1>
-        <div>
+        <div data-aos="fade-right">
             <h3>Minesweepers</h3>
             <ul>
                 <li>The final project of my Programming 2 course that uses the SFML library to make a single player version of Minesweepers with some debugging features and the capability to change mine configurations based on files loaded in</li>
@@ -98,7 +99,7 @@
                 <li>SFML</li>
             </ul>
         </div>
-        <div>
+        <div data-aos="fade-left">
             <div>
                 <h3>Tic Tac Toe App</h3>
                 <a href="https://play.google.com/store/apps/details?id=com.tealeaf28.tictactoe&hl=en_US" target="_blank"><img src="images/tictactoe_logo.png" /></a>
@@ -111,7 +112,7 @@
                 <li>Java</li>
             </ul>
         </div>
-        <div>
+        <div data-aos="fade-right">
             <div>
                 <h3>Four Elements in a Row! (Tic Tac Toe v2)</h3>
             </div>
@@ -123,7 +124,7 @@
                 <li>Java</li>
                 <li>GIMP</li>
             </ul>
-            <div id="fourelements-display">
+            <div id="fourelements-display" data-aos="fade-up">
                 <img src="images/fourelementshome.png">
                 <img src="images/fourelementsgameplay.png">
             </div>
@@ -131,7 +132,7 @@
     </section>
     <section id="extras" class="section-f">
         <h1>Extracurriculars</h1>
-        <div>
+        <div data-aos="fade-left">
             <div class="head-container">
                 <h3>Society of Asian Engineers and Scientists</h3>
                 <span>Sept. 2019 - Now</span>
@@ -142,7 +143,7 @@
                 <li>Works with the SASE board members as a part of ENG to help with planning events, such as GBMs, as well as manning them; during our temaki-zushi fundraiser held for SASE Spirit Week, we raised over $450</li>
             </ul>
         </div>
-        <div>
+        <div data-aos="fade-right">
             <div class="head-container">
                 <h3>Applications of Discrete Structures Teaching Assistant</h3>
                 <span>Jan. 2020 - Now</span>
@@ -173,17 +174,17 @@
         <section id="animations">
             <h3>Blender Animations!</h3>
             <div id="animations-container">
-                <div>
+                <div data-aos="fade-right">
                     <p><strong>Nyan Carrot's Space Donut Adventures!</strong></p>
                     <video src="videos/NyanCarrot's Space Donut Adventures.mp4" controls>Sorry, your browser doesn't support this video player.</video>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <p><strong>Self Watering Planter</strong></p>
                     <video src ="videos/Self Watering Planter.mp4" controls>Sorry, your browser doesn't support this video player.</video>
                 </div>
             </div>
         </section>
-        <section id="models">
+        <section id="models" data-aos="fade-in">
             <h3>3D Models</h3>
             <div>
                 <ul>
@@ -213,6 +214,12 @@
         <p>Designed by Tianrui Li</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
     <script src="index.js"></script>
 </body>
 </html>
