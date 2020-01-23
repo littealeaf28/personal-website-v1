@@ -113,7 +113,7 @@ nav li:nth-child(even) a:hover {
 
 .section-c {
     color: #6b98db;
-    background: #ececec;
+    background: #ffffff;
     border-radius: 8px;
     border: #6b98db solid 2px;
 }
@@ -167,8 +167,9 @@ nav li:nth-child(even) a:hover {
     color: #0DCB64;
     text-align: center;
     padding: 8px 4%;
-    width: 92%;
+    width: 96%;
     margin: auto;
+    box-sizing: border-box;
     margin-top: 20px;
     background: rgb(30,30,30);
     border-radius: 12px;
@@ -208,7 +209,8 @@ nav li:nth-child(even) a:hover {
     border: #6b98db solid 2px;
     border-radius: 6px;
     padding: 12px;
-    margin: 6px;
+    margin: 8px;
+    margin-bottom: 0;
 }
 
 .section-e > div:nth-child(odd) {
@@ -318,7 +320,7 @@ nav li:nth-child(even) a:hover {
     font-size: 1.3em;
 }
 
-#animations div {
+#animations-container div {
     margin: 8px;
     border-radius: 8px;
     color: #1f6acc;
@@ -327,13 +329,13 @@ nav li:nth-child(even) a:hover {
     background: #9cbae7;
 }
 
-#animations div:nth-child(even) {
+#animations-container div:nth-child(odd) {
     color: #1da123;
     border: #1da123 2px solid;
     background: #81c96c;
 }
 
-#animations div p {
+#animations-container div p {
     font-size: 1.2em;
     margin: 4px;
 }
@@ -405,13 +407,40 @@ footer {
     color: #9cbae7;
 }
 
-/* Required for now because not fully responsive */
-
-#warning {
-    display: none;
-}
-
 /* Media Queries */
+
+@media screen and (min-width: 1280px) {
+    .section-b, .section-c, .section-e, .section-f, #languages, #models {
+        width: 840px;
+        margin: auto;
+        margin-top: 12px;
+    }
+
+    .section-d > div {
+        width: 840px;
+        margin: auto;
+    }
+
+    #animations {
+        width: 960px;
+        margin: auto;
+    }
+
+    #animations-container {
+        width: 100%;
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #animations-container div {
+        width: 48%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+}
 
 @media screen and (max-width: 920px) {
     nav {
@@ -513,31 +542,3 @@ footer {
         max-height: none;
     }
 }
-
-/* @media screen and (min-width: 1280px) {
-    nav {
-        display: none;
-    }
-
-    section {
-        display: none;
-    }
-
-    footer {
-        display: none;
-    }
-
-    #warning {
-        display: initial;
-        text-align: center;
-    }
-
-    #warning h1 {
-        margin: 4px;
-        color: #9cbae7;
-    }
-
-    #warning p {
-        padding: 0 5%;
-    }
-} */
